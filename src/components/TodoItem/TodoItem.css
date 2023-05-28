@@ -1,0 +1,40 @@
+.todoitem {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.todoitem input[type='text'] {
+  width: 100%;
+}
+
+.todoitem input:not(:read-only) {
+  background-color: rgba(0, 0, 0, .1)
+}
+
+
+.todoitem input:read-only {
+  border: none;
+  cursor: default;
+  font-size: inherit
+}
+
+.todoitem input:read-only:focus,
+.todoitem input:read-only:hover {
+  box-shadow: none;
+}
+
+.todoitem button[name='edit'] {
+  padding: 10.5px 12.5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-right: 15px;
+}
+
+.todoitem button[name='edit']:focus,
+.todoitem button[name='edit']:hover {
+  outline: transparent;
+  box-shadow: 0px 0px 10px 5px rgb(146, 191, 146);
+  background-color: rgb(150, 205, 150);
+} 

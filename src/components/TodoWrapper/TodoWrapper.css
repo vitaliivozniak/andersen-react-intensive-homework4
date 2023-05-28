@@ -1,0 +1,56 @@
+.todowrapper__item input {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.todowrapper__item input:checked,
+.todowrapper__item input:checked + button {
+  opacity: .3;
+}
+
+.todowrapper__item input:checked + input[type='text'] {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, .4);
+}
+
+.todowrapper__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.todowrapper__item button {
+  margin-left: auto;
+  padding: 15px 15px 10.2px;
+  position: relative;
+}
+
+.todowrapper__item input:checked + button {
+  opacity: .4;
+}
+
+.todotab__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.todotab__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.todotab__item button {
+  padding: 10px 20px;
+  background-color:rgba(51, 13, 59, 0.7);
+}
+
+.todotab__item button:focus,
+.todotab__item button:hover {
+  outline: transparent;
+  box-shadow: 0px 0px 10px 5px rgba(51, 13, 59, 0.7);
+  background-color:rgba(51, 13, 59, 0.7);
+}
+
+.empty {
+  text-align: center;
+}

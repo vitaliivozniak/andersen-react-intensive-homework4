@@ -1,0 +1,26 @@
+.loginform {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 35px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.loginform__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginform label {
+  width: 80%;
+}
+
+.loginform button{
+  padding: 10px 20px;
+}
+
+.error {
+  color: rgb(188, 15, 15);
+  font-weight: bold;
+}
